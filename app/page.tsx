@@ -42,7 +42,7 @@ export default function Dashboard() {
           getSideQuests(),
         ]);
 
-        const freeChar = chars.find((c) => c.isFreeVersion) || chars[0];
+        const freeChar = chars.find((c: Character) => c.isFreeVersion) || chars[0];
         setCharacter(freeChar);
         setDailyQuests(daily);
         setMainQuests(main);
